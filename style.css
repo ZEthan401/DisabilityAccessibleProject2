@@ -1,0 +1,21 @@
+/*Ethan Zhong,Web Dev,Period 7/8 Even, Level 2 Match Game*/
+
+button {
+    width: 150px;
+    height: 175px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px 0px;
+
+    margin: 0 auto;
+    width: 25%;
+}
+#grid img {
+    border: 5px solid rgb(233, 0, 0);
+    margin: auto;
+    width: 150px;
+    height: 200px;
+}
