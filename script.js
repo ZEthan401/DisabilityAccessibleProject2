@@ -1,5 +1,17 @@
 /*Ethan Zhong,Web Dev,Period 7/8 Even, Level 2 Match Game*/
 
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    while (currentIndex != 0) {
+  
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+}
 var score = 0;
 var imageArray = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
 var selectedImages = [];
@@ -25,18 +37,6 @@ function initialize() {
     imageElements = [imageElement1, imageElement2, imageElement3, imageElement4, imageElement5, imageElement6, imageElement7, imageElement8, imageElement9, imageElement10, imageElement11, imageElement12, imageElement13, imageElement14, imageElement15, imageElement16];
     
     shuffle(imageArray);
-}
-function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
-  
-    while (currentIndex != 0) {
-  
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
-    }
 }
 function resetScore() {
     score = 0;
