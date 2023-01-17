@@ -1,4 +1,4 @@
-<!--Ethan Zhonf,Web Dev,Period 7/8 Even, Level 2 Match Game-->
+<!--Ethan Zhong,Web Dev,Period 7/8 Even, Level 2 Match Game-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,29 +6,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    /*
+    1.Gave Instructions for the game
+    2.Change border color to red for people who are colorblind
+    3.Made cards bigger so people can see it easier
+    4.Spaced out the cards making the cards more readable
+    5.I changed the Title of the document to purpose of my code
+    */
+</script>
+
 <body onload="initialize();">
-    <h1>Matching Game</h1>
+    <h1>Matching Game: Clicking the boxes below will start the matching game.  Pressing restart wil restart the game and bring the score back to 0</h1>
 
     <div id="grid">
         <img src="Images/Image9.png" id="image1" onclick="selectCard(0);">
         <img src="Images/Image9.png" id="image2" onclick="selectCard(1);">
-        <img src="Images/Image9.png" id="image3" onclick="selectCard(2);">
-        <img src="Images/Image9.png" id="image4" onclick="selectCard(3);">
-        <img src="Images/Image9.png" id="image5" onclick="selectCard(4);">
-        <img src="Images/Image9.png" id="image6" onclick="selectCard(5);">
-        <img src="Images/Image9.png" id="image7" onclick="selectCard(6);">
-        <img src="Images/Image9.png" id="image8" onclick="selectCard(7);">
-        <img src="Images/Image9.png" id="image9" onclick="selectCard(8);">
-        <img src="Images/Image9.png" id="image10" onclick="selectCard(9);">
-        <img src="Images/Image9.png" id="image11" onclick="selectCard(10);">
-        <img src="Images/Image9.png" id="image12" onclick="selectCard(11);">
-        <img src="Images/Image9.png" id="image13" onclick="selectCard(12);">
         <img src="Images/Image9.png" id="image14" onclick="selectCard(13);">
         <img src="Images/Image9.png" id="image15" onclick="selectCard(14);">
         <img src="Images/Image9.png" id="image16" onclick="selectCard(15);">
+
     </div>
 
     <h2 id="score">Score: 0</h2>
